@@ -33,13 +33,3 @@ def solve1(s):
             if s.count(char) - delete:
                 di[char] = s.count(char) - delete
     return result
-
-def solve3(inventory, orders):
-    result = 0
-    while orders:
-        result += max(inventory)
-        inventory[inventory.index(max(inventory))] -= 1
-        orders -= 1
-    return result
-
-print(solve3([1000000000], 1000000000))
