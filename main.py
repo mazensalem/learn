@@ -1,2 +1,1 @@
 print("Wellcome")
-print("Hello")
